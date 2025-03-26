@@ -12,7 +12,8 @@ CREATE TABLE user_venera
 Внесла данные в таблицы:
 INSERT INTO user_venera  (id, user_name, level_id, skill)  
 VALUES (default, 'Anton', 1, 900000), (default, 'Denis', 3, 4000),
-   (default, 'Petr', 2, 50000), (default, 'Andrey', 4, 20),  (default, 'Olga', 1, 600000),
+   (default, 'Petr', 2, 50000), (default, 'Andrey', 4, 20),
+   (default, 'Olga', 1, 600000),
    (default, 'Anna', 1, 1600000);
 
 INSERT INTO level  (id, level_name)  
