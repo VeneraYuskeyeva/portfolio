@@ -6,8 +6,8 @@ CREATE TABLE user_venera
    level_id serial not null,
   skill integer);
 
-Task: Create a table "level"
-Solution:
+-- Task: Create a table "level"
+-- Solution:
  CREATE TABLE level  
  (id serial not null,
    level_name varchar(50) not null);
