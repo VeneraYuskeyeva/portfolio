@@ -1,5 +1,5 @@
 --Task: Create a table "user_venera"
-Solution:	
+--Solution:	
 CREATE TABLE user_venera  
 (id serial not null,
    user_name varchar(50) not null,
