@@ -1,4 +1,4 @@
-Task: Create a table "user_venera"
+--Task: Create a table "user_venera"
 Solution:	
 CREATE TABLE user_venera  
 (id serial not null,
