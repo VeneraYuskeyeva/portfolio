@@ -1,0 +1,29 @@
+Task:
+Create a collection of requests in Postman for working with the Dummy API. The collection should include the main CRUD operations for users, posts, and comments.
+
+Description:
+
+Implemented requests.
+
+Users:
+Get a list of users (GET /user)
+Create a user (POST /user/create)
+Get user information (GET /user/{id})
+Update user information (PUT /user/{id})
+Delete a user (DELETE /user/{id})
+
+Posts:
+Create a post (POST /post/create)
+Get post information (GET /post/{id})
+Update a post (PUT /post/{id})
+Delete a post (DELETE /post/{id})
+
+Comments:
+Create a comment (POST /comment/create)
+Delete a comment (DELETE /comment/{id})
+
+
+All requests are configured according to the API requirements (headers, parameters, request body, etc.).
+Postman environment variables are used for easier testing.
+Each request has been tested for correctness.
+The collection has been exported in JSON format and added to the repository.
