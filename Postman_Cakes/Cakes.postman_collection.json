@@ -1,0 +1,1318 @@
+{
+	"info": {
+		"_postman_id": "5335d757-1325-4a14-8781-1bba0dc00853",
+		"name": "Cakes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5363302",
+		"_collection_link": "https://orange-robot-8087.postman.co/workspace/test~bed0d326-1f86-4457-a36b-f9da3aba2952/collection/5363302-5335d757-1325-4a14-8781-1bba0dc00853?action=share&source=collection_link&creator=5363302"
+	},
+	"item": [
+		{
+			"name": "Register User (Регистрация пользователя)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "d2q7ylin07rtmolddevacqhufwprmwpz"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "sessionid_dev.cakeiteasy.se=d2q7ylin07rtmolddevacqhufwprmwpz"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Venera\",\r\n    \"last_name\": \"Yuskeyeva\",\r\n    \"email\": \"venerayuskeyeva.es@gmail.com\",\r\n    \"password\": \"15122019\",\r\n    \"locale\": \"sv_SE\",\r\n    \"subscribed_on_news\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/auth/register/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/auth/register/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'sessionid_dev.cakeiteasy.se=d2q7ylin07rtmolddevacqhufwprmwpz' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: d2q7ylin07rtmolddevacqhufwprmwpz' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw '{\"first_name\":\"Venera\",\"last_name\":\"Yuskeyeva\",\"email\":\"venerayuskeyeva.es@gmail.com\",\"password\":\"15122019\",\"locale\":\"sv_SE\",\"subscribed_on_news\":false}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User (Авторизация пользователя)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "d2q7ylin07rtmolddevacqhufwprmwpz"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "sessionid_dev.cakeiteasy.se=d2q7ylin07rtmolddevacqhufwprmwpz"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"venerayuskeyeva.es@gmail.com\",\r\n    \"password\": \"15122019\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/auth/login/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/auth/login/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'sessionid_dev.cakeiteasy.se=d2q7ylin07rtmolddevacqhufwprmwpz' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: d2q7ylin07rtmolddevacqhufwprmwpz' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw '{\"email\":\"venerayuskeyeva.es@gmail.com\",\"password\":\"15122019\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of products by category (Получение информации о продуктах по категории)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/product-types/?country=SE&ref_name=goteborg&category_id=2&new_search=true",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"product-types",
+						""
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "SE"
+						},
+						{
+							"key": "ref_name",
+							"value": "goteborg"
+						},
+						{
+							"key": "category_id",
+							"value": "2"
+						},
+						{
+							"key": "new_search",
+							"value": "true"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/product-types/?country=SE&ref_name=goteborg&category_id=2&new_search=true' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get information of the product (Получение детальной информации о продукте)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/product-types/92/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"product-types",
+						"92",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/product-types/92/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE'"
+			},
+			"response": []
+		},
+		{
+			"name": "Add product in the cart (Добавление товара в корзину)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product\": 2020,\r\n        \"quantity\": 5,\r\n        \"parent_type\": null,\r\n        \"order_lines\": [\r\n            {\r\n                \"type\": \"EXTRA_PRODUCT\",\r\n                \"product\": 3049\r\n            },\r\n            {\r\n                \"question\": 801,\r\n                \"type\": \"QUESTION\",\r\n                \"answer\": \"Hello, world!\"\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/cart/order-lines/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"cart",
+						"order-lines",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/cart/order-lines/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw $'[{\"client_id\":\"159e0198-7aea-44ed-b5e8-57bcdbd9e1f02025-03-21\",\"product\":2020,\"quantity\":5,\"parent_type\":null,\"order_lines\":[{\"type\":\"EXTRA_PRODUCT\",\"product\":3049},{\"question\":801,\"type\":\"QUESTION\",\"answer\":\"Hello, world\\u0021\"}]}]'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get information in the cart (Получение информации о содержимом корзины)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/cart/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"cart",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/cart/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE'"
+			},
+			"response": []
+		},
+		{
+			"name": "Choose type of delivery (Выбор доставки)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"PICKUP\",\r\n    \"outlet\": 48,\r\n    \"delivery_date\": \"2025-03-27\",\r\n    \"delivery_time\": \"10:00-11:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/cart/delivery-order/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"cart",
+						"delivery-order",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/cart/delivery-order/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw '{\"type\":\"PICKUP\",\"outlet\":48,\"delivery_date\":\"2025-03-27\",\"delivery_time\":\"10:00-11:00\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Choose individual o company (Выбор физ.лицо или компания)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"company\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/cart/apply-company/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"cart",
+						"apply-company",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/cart/apply-company/' \\\r\n  -X 'PUT' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw '{\"company\":null}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Payment (Оплата)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subscribed_on_news\": false,\r\n    \"user_email\": \"venerayuskeyeva.es@gmail.com\",\r\n    \"user_name\": \"Venera Yuskeyeva\",\r\n    \"user_phone\": \"+461234567899\",\r\n    \"code\": null,\r\n    \"success_url\": \"https://dev.cakeiteasy.se/receipt/pre?method=BAMBORA\",\r\n    \"reject_url\": \"https://dev.cakeiteasy.se/payment/m/private/bambora/pre?method=BAMBORA&error=true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/payments/bambora/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"payments",
+						"bambora",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/payments/bambora/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE' \\\r\n  --data-raw '{\"subscribed_on_news\":false,\"user_email\":\"venerayuskeyeva.es@gmail.com\",\"user_name\":\"Venera Yuskeyeva\",\"user_phone\":\"+461234567899\",\"code\":null,\"success_url\":\"https://dev.cakeiteasy.se/receipt/pre?method=BAMBORA\",\"reject_url\":\"https://dev.cakeiteasy.se/payment/m/private/bambora/pre?method=BAMBORA&error=true\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Check payment´s status (Проверка статуса оплаты)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/payments/6fa78eb130ae4e4ca50412b1f3f7db91/status/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"payments",
+						"6fa78eb130ae4e4ca50412b1f3f7db91",
+						"status",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/payments/6fa78eb130ae4e4ca50412b1f3f7db91/status/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE'"
+			},
+			"response": []
+		},
+		{
+			"name": "Check payment by sid (Проверка оплаты по sid)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en-US;q=0.9,en;q=0.8,ca;q=0.7,gl;q=0.6"
+					},
+					{
+						"key": "origin",
+						"value": "https://v1.checkout.bambora.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://v1.checkout.bambora.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-epay-system",
+						"value": "Checkout/6.38.1 CheckoutSDKWeb/3.0.2"
+					}
+				],
+				"url": {
+					"raw": "https://api.v1.checkout.bambora.com/checkout/6fa78eb130ae4e4ca50412b1f3f7db91",
+					"protocol": "https",
+					"host": [
+						"api",
+						"v1",
+						"checkout",
+						"bambora",
+						"com"
+					],
+					"path": [
+						"checkout",
+						"6fa78eb130ae4e4ca50412b1f3f7db91"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.v1.checkout.bambora.com/checkout/6fa78eb130ae4e4ca50412b1f3f7db91' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en-US;q=0.9,en;q=0.8,ca;q=0.7,gl;q=0.6' \\\r\n  -H 'origin: https://v1.checkout.bambora.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://v1.checkout.bambora.com/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-epay-system: Checkout/6.38.1 CheckoutSDKWeb/3.0.2'"
+			},
+			"response": []
+		},
+		{
+			"name": "Pay (Нажать кнопку Оплатить)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en-US;q=0.9,en;q=0.8,ca;q=0.7,gl;q=0.6"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://v1.checkout.bambora.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://v1.checkout.bambora.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-epay-system",
+						"value": "Checkout/6.38.1 CheckoutSDKWeb/3.0.2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentcard\": {\r\n        \"cardnumber\": \"4154210000000001\",\r\n        \"cvc\": \"000\",\r\n        \"expmonth\": \"5\",\r\n        \"expyear\": \"26\",\r\n        \"cardholder\": {\r\n            \"name\": \"John Doe\"\r\n        }\r\n    },\r\n    \"customer\": {\r\n        \"phonenumber\": null,\r\n        \"phonenumbercountrycode\": \"ES\",\r\n        \"email\": \"venerayuskeyeva.es@gmail.com\"\r\n    },\r\n    \"accepturl\": \"https://v1.checkout.bambora.com/6fa78eb130ae4e4ca50412b1f3f7db91/creditcard/returnfrom3daccept?ui=modal&language=en-US\",\r\n    \"declineurl\": \"https://v1.checkout.bambora.com/6fa78eb130ae4e4ca50412b1f3f7db91/creditcard/returnfrom3ddecline?ui=modal&language=en-US\",\r\n    \"browserinformation\": {\r\n        \"javaenabled\": false,\r\n        \"javascriptenabled\": true,\r\n        \"language\": \"ru\",\r\n        \"colordepth\": 24,\r\n        \"screenheight\": 728,\r\n        \"screenwidth\": 1366,\r\n        \"timezoneoffset\": -60\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.v1.checkout.bambora.com/checkout/6fa78eb130ae4e4ca50412b1f3f7db91/authorize/paymentcard",
+					"protocol": "https",
+					"host": [
+						"api",
+						"v1",
+						"checkout",
+						"bambora",
+						"com"
+					],
+					"path": [
+						"checkout",
+						"6fa78eb130ae4e4ca50412b1f3f7db91",
+						"authorize",
+						"paymentcard"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.v1.checkout.bambora.com/checkout/6fa78eb130ae4e4ca50412b1f3f7db91/authorize/paymentcard' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en-US;q=0.9,en;q=0.8,ca;q=0.7,gl;q=0.6' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'origin: https://v1.checkout.bambora.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://v1.checkout.bambora.com/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-epay-system: Checkout/6.38.1 CheckoutSDKWeb/3.0.2' \\\r\n  --data-raw '{\"paymentcard\":{\"cardnumber\":\"4154210000000001\",\"cvc\":\"000\",\"expmonth\":\"5\",\"expyear\":\"26\",\"cardholder\":{\"name\":\"John Doe\"}},\"customer\":{\"phonenumber\":null,\"phonenumbercountrycode\":\"ES\",\"email\":\"venerayuskeyeva.es@gmail.com\"},\"accepturl\":\"https://v1.checkout.bambora.com/6fa78eb130ae4e4ca50412b1f3f7db91/creditcard/returnfrom3daccept?ui=modal&language=en-US\",\"declineurl\":\"https://v1.checkout.bambora.com/6fa78eb130ae4e4ca50412b1f3f7db91/creditcard/returnfrom3ddecline?ui=modal&language=en-US\",\"browserinformation\":{\"javaenabled\":false,\"javascriptenabled\":true,\"language\":\"ru\",\"colordepth\":24,\"screenheight\":728,\"screenwidth\":1366,\"timezoneoffset\":-60},\"paymenttypefeeid\":\"103679\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Check order (Проверка заказа)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "sv, en"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.cakeiteasy.se"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.cakeiteasy.se/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-cart-key-header",
+						"value": "MARKETPLACE-SE"
+					},
+					{
+						"key": "x-session-key-header",
+						"value": "9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					},
+					{
+						"key": "x-source-header",
+						"value": "MARKETPLACE"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl"
+					}
+				],
+				"url": {
+					"raw": "https://api.dev.cakeiteasy.no/api/store/orders/6fa78eb130ae4e4ca50412b1f3f7db91/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dev",
+						"cakeiteasy",
+						"no"
+					],
+					"path": [
+						"api",
+						"store",
+						"orders",
+						"6fa78eb130ae4e4ca50412b1f3f7db91",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.dev.cakeiteasy.no/api/store/orders/6fa78eb130ae4e4ca50412b1f3f7db91/' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: sv, en' \\\r\n  -b 'csrftoken=ff71myGXRehGb6sMiBE2oLqQ22rakmCp; sessionid_dev.cakeiteasy.se=9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'origin: https://dev.cakeiteasy.se' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://dev.cakeiteasy.se/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\r\n  -H 'x-cart-key-header: MARKETPLACE-SE' \\\r\n  -H 'x-session-key-header: 9ra4e8vv62wqh9tcf53afcl6fgsugygl' \\\r\n  -H 'x-source-header: MARKETPLACE'"
+			},
+			"response": []
+		}
+	]
+}
